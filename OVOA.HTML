@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVO — Precision in Every Stroke</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            ovoBlack: '#090D16',
+            ovoDarkCard: '#111726',
+            ovoBlue: '#0EA5E9',
+            ovoEmerald: '#10B981',
+            ovoGold: '#D97706',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      background-color: #090D16;
+      color: #F8FAFC;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(14, 165, 233, 0.15) 0%, rgba(9, 13, 22, 0) 70%);
+    }
+    .glass-nav {
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .img-overlay {
+      background: linear-gradient(180deg, rgba(9,13,22,0.2) 0%, rgba(9,13,22,0.95) 100%);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-ovoBlue selection:text-black">
+
+  <!-- CHIC & CLEAN NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="logo-ovo.png" alt="OVO Logo" class="h-8 w-auto invert brightness-200" />
+      </a>
+      <nav class="hidden md:flex items-center gap-10 text-xs font-semibold uppercase tracking-widest text-gray-400">
+        <a href="#story" class="hover:text-white transition">The Story</a>
+        <a href="#vision" class="hover:text-white transition">The Quest</a>
+      </nav>
+      <a href="#beta" class="border border-white/20 hover:border-ovoBlue hover:text-ovoBlue text-xs font-bold uppercase tracking-widest px-6 py-2.5 rounded-full transition duration-300">
+        Join the Elite
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION : IMMERSIVE SWIMMER PHOTO -->
+  <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 hero-glow overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-40">
+      <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=2070&auto=format&fit=crop" alt="Swimmer under water" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 img-overlay"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center mt-10">
+      <span class="text-xs uppercase font-extrabold tracking-[0.3em] text-ovoBlue mb-6 block">Write the history</span>
+      
+      <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white leading-none mb-8">
+        Every hundredth <br />
+        <span class="font-serif italic font-normal text-gray-300">is forged in silence.</span>
+      </h1>
+
+      <p class="text-base md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-12">
+        Turn your sensations into data. Move beyond raw effort into pure mastery.
+      </p>
+
+      <a href="#story" class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-white hover:text-ovoBlue transition">
+        <span>Discover the story</span>
+        <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- STORY SECTION : 3 ACTS -->
+  <section id="story" class="py-28 px-6 max-w-6xl mx-auto">
+    
+    <!-- ACT I : SOLITUDE & RIGOR -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-32">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+        <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?q=80&w=1200&auto=format&fit=crop" alt="Swimmer preparing" class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ovoBlack via-transparent to-transparent"></div>
+        <span class="absolute bottom-6 left-6 font-serif italic text-2xl text-white">05:12 AM</span>
+      </div>
+      
+      <div class="space-y-6">
+        <span class="text-xs font-bold tracking-widest text-ovoBlue uppercase">Act I — The Solitude</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">The invisible repetition.</h2>
+        <p class="text-gray-400 font-light leading-relaxed">
+          Thousand of meters logged with your eyes locked on the black line. You feel the burn in your shoulders, knowing that victory is never born on race day. It is forged in the grueling sets nobody watches.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACT II : STROKE PRECISION -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-32">
+      <div class="space-y-6 md:order-1 order-2">
+        <span class="text-xs font-bold tracking-widest text-ovoEmerald uppercase">Act II — The Precision</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">Obsessed with details.</h2>
+        <p class="text-gray-400 font-light leading-relaxed">
+          An elbow dropped by a few degrees, a slipped catch, a short underwater phase... In swimming, brute force without precision is just wasted energy. To break through plateaus, effort alone is no longer enough.
+        </p>
+      </div>
+      
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group md:order-2 order-1">
+        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1200&auto=format&fit=crop" alt="Underwater stroke" class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ovoBlack via-transparent to-transparent"></div>
+        
+        <div class="absolute bottom-6 right-6 left-6 p-4 bg-ovoDarkCard/90 backdrop-blur border border-white/10 rounded-xl flex items-center justify-between">
+          <div class="text-xs">
+            <p class="font-bold text-white">OVO Motion Vision</p>
+            <p class="text-gray-400">Elbow angle detected: 112°</p>
+          </div>
+          <span class="text-xs px-2.5 py-1 bg-ovoEmerald/20 text-ovoEmerald rounded font-bold">Optimal</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACT III : THE REVELATION (OVO) -->
+    <div class="text-center max-w-3xl mx-auto pt-12">
+      <span class="text-xs font-bold tracking-widest text-ovoGold uppercase mb-4 block">Act III — The Co-Pilot</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-6">
+        Your ultimate ally in the pool.
+      </h2>
+      <p class="text-gray-400 font-light text-lg leading-relaxed mb-12">
+        OVO was engineered to guide this pursuit. Designed to read your biomechanics, monitor fatigue, and fine-tune your workouts to transform every movement into pure velocity.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- APP MOCKUPS SHOWCASE -->
+  <section id="vision" class="py-20 bg-ovoDarkCard border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <img src="logo-ovo.png" alt="OVO Logo" class="h-10 w-auto mx-auto mb-4 invert brightness-200" />
+        <p class="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold">Precision in every stroke</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Screen 1 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="Annotation 2026-09-06 121801.png" alt="OVO AI Assistant" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-ovoBlue">Conversational AI</span>
+            <h3 class="text-sm font-bold text-white mt-1">Smart Assistant & Custom Sets</h3>
+          </div>
+        </div>
+
+        <!-- Screen 2 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="loijyy.png" alt="OVO Motion Vision" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-ovoEmerald">AI Lab</span>
+            <h3 class="text-sm font-bold text-white mt-1">Video Biomechanical Analysis</h3>
+          </div>
+        </div>
+
+        <!-- Screen 3 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="ù.png" alt="OVO Calendar" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-red-400">Physiology</span>
+            <h3 class="text-sm font-bold text-white mt-1">Load Tracking & Recovery</h3>
+          </div>
+        </div>
+
+        <!-- Screen 4 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="gh.png" alt="Race Day Hub" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-ovoGold">Race Day</span>
+            <h3 class="text-sm font-bold text-white mt-1">Meet Management & Target Splits</h3>
+          </div>
+        </div>
+
+        <!-- Screen 5 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="jhg.png" alt="OVO Hub" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-purple-400">Culture</span>
+            <h3 class="text-sm font-bold text-white mt-1">Motivation & VOD Feed</h3>
+          </div>
+        </div>
+
+        <!-- Screen 6 -->
+        <div class="bg-ovoBlack/60 p-4 rounded-2xl border border-white/10 hover:border-ovoBlue/50 transition duration-300">
+          <div class="rounded-xl overflow-hidden mb-4 border border-white/5">
+            <img src="l.png" alt="Goals & Tracking" class="w-full h-auto object-cover" />
+          </div>
+          <div class="p-2">
+            <span class="text-[10px] font-bold tracking-widest uppercase text-gray-400">Analytics</span>
+            <h3 class="text-sm font-bold text-white mt-1">Goals & Tech Profile</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BETA SIGNUP SECTION -->
+  <section id="beta" class="py-28 px-6 max-w-4xl mx-auto text-center">
+    <div class="bg-gradient-to-b from-ovoDarkCard to-ovoBlack p-10 md:p-16 rounded-3xl border border-white/10 relative overflow-hidden">
+      
+      <div class="absolute top-0 right-0 w-64 h-64 bg-ovoBlue/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <span class="text-xs font-bold tracking-[0.2em] text-ovoBlue uppercase mb-4 block">Private Access</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Write the history.</h2>
+      <p class="text-gray-400 font-light max-w-lg mx-auto text-sm md:text-base mb-10 leading-relaxed">
+        Be among the first elite swimmers worldwide to use OVO and push past your absolute limits.
+      </p>
+
+      <!-- Signup Form -->
+      <form id="betaForm" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto items-center justify-center">
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Your athlete email" 
+          required 
+          class="w-full px-6 py-4 rounded-full bg-white/5 border border-white/15 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-ovoBlue transition"
+        />
+        <button type="submit" id="submitBtn" class="w-full sm:w-auto bg-white hover:bg-gray-200 text-ovoBlack font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition duration-300 whitespace-nowrap">
+          Join Beta
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-white/5 text-center text-xs text-gray-600">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="logo-ovo.png" alt="OVO" class="h-6 w-auto invert opacity-50" />
+        <span class="font-serif italic text-gray-400">Precision in every stroke.</span>
+      </div>
+      <p>© 2026 OVO Swim Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GOOGLE SHEETS SCRIPT CONNECTION -->
+  <script>
+    // Replace the string below with your Google Apps Script deployment URL
+    const scriptURL = 'VOTRE_URL_GOOGLE_SCRIPT';
+    const form = document.getElementById('betaForm');
+    const btn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.innerText = 'JOINING...';
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          alert('Welcome to the OVO Beta! Your access details will be sent to you by email.');
+          form.reset();
+          btn.disabled = false;
+          btn.innerText = 'JOIN BETA';
+        })
+        .catch(error => {
+          alert('An error occurred. Please try again later.');
+          btn.disabled = false;
+          btn.innerText = 'JOIN BETA';
+        });
+    });
+  </script>
+
+</body>
+</html>
